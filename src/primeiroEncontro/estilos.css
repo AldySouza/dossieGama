@@ -1,0 +1,116 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    font-family: 'Roboto', sans-serif;
+
+background: linear-gradient(180deg, rgba(47, 46, 65, 0.2) 0%, rgba(47, 46, 65, 0) 100%), 
+            linear-gradient(180deg, #a64ee0 0%, rgba(166, 78, 224, 0) 100%), #e6e6e6;
+}
+
+#tituloPrincipal {
+    position: absolute;
+    width: 818px;
+    height: 116px;
+    left: 355px;
+    top: 41px;
+
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 112px;
+    text-transform: capitalize;
+
+    color: #61f035;
+    
+    text-shadow: 0px 4px 4px
+    rgba(0, 0, 0, 0.25);
+    
+}
+#imagem{
+    position: absolute;
+    width: 728px;
+    height: 425px;
+    left: 310px;
+    top: 199px;
+    
+    background: url(team.png);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* MENU */
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 40px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav
+{
+    background: linear-gradient(180deg, #63dc3e 0%, rgba(99, 220, 62, 0.15) 100%), #ffffff;
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+    width: 240px;
+    height: 58%;
+    top: -60%;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateY(100%);
+}
+
+ul{
+    top: 60px;
+    position: absolute;
+    width: 240px;
+}
+
+#hyper{
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+}
+
+a{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    padding: 14.8px 5px;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
+

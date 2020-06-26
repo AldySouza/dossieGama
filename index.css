@@ -1,0 +1,232 @@
+/* .container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "stack stack stack stack"
+    "intro intro intro intro";
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: #A64EE0;
+    --second-color: #63DC3E;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(47, 46, 65, 0.2) 40%, rgba(47, 46, 65, 0) 100%), linear-gradient(180deg, #A64EE0 40%, rgba(166, 78, 224, 0) 90%), #E6E6E6;
+}
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.logoGama{
+    position: absolute;
+    right: 0;
+    top: o;
+    width: 15%;
+}
+
+.principal{
+    background-image: url(src/principalPage/capa.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 4500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.containerSlacks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 217px;
+    background-color: rgba(255, 255, 255, 0.90);;
+}
+
+/* CONTAINER ICON SLACKS */
+.slack{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slack div{
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hacker{
+    background-image: url(src/principalPage/hacker.png);
+}
+
+.hustler img, .hyper img{
+    padding-top: 3% ;
+}
+
+.titleSlack{
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 2rem;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.description{
+    min-height: 400px;
+    margin: 2rem;
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: 0.02em;
+}
+
+.description h3{
+    font-weight: bold;
+    color: #2F2E41;
+    line-height: 42px;
+    font-size: 3.25rem;
+    margin-bottom: 15px;
+}
+
+/* CARD SLACKS */
+
+.stacksContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slackProfile {
+    display: grid;
+    grid-template-columns: 1fr 12fr auto;
+    max-width: 1024px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slackProfileItem_primary {
+    display: flex;
+    align-items: center;
+    min-height: 215px;
+    border: 6px solid var(--primary-color);
+    width: 100%;
+}
+
+.slackProfileItem_second {
+    display: flex;
+    align-items: center;
+    min-height: 215px;
+    border: 6px solid var(--second-color);
+}
+
+.slackProfileItemImagem{
+    height: 130px;
+    width: 130px;
+    margin: 0 50px;
+}
+
+.slackProfileItemImagem img{
+    border-radius: 50%;
+    height: 100%;
+}
+
+.slackProfileItemInformation{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slackProfileItemInformation p{
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.lateral_primary{
+    background-color: var(--primary-color);
+}
+
+.lateral_primary p {
+    transform: rotate(270deg);
+    color: white;
+    height: 1rem;
+}
+
+.lateral_second{
+    background-color: var(--second-color);
+}
+
+.lateral_second p {
+    transform: rotate(90deg);
+    color: #000;
+    height: 1rem;
+}
+
+.lateral img {
+    position: absolute;
+    color: white;
+    top: 0;
+}
+
+.lateralExtra, .lateralExtraVazio{
+    width: 230px;
+    height: 214px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 10px;
+}
+
+.lateralExtraData{
+    background-image: url(src/principalPage/data.svg);
+}
+
+.lateralExtraDesing{
+    background-image: url(src/principalPage/interiordesign.svg);
+}
+
+.lateralExtraDesigner{
+    background-image: url(src/principalPage/designer.svg);
+}
+
+.lateralExtraHackers{
+    background-image: url(src/principalPage/hackers.svg);
+}
+
