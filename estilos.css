@@ -76,10 +76,6 @@ nav
     position: absolute;
     transition: all .5s;
 }
-/*
-nav:hover{
-    transform: translateY(100%);
-}*/
 
 input[type="checkbox"]:checked ~ nav
 {
