@@ -1,0 +1,282 @@
+body{
+    background: 
+    linear-gradient(180deg, rgba(47, 46, 65, 0.2) 0%, rgba(47, 46, 65, 0) 100%), 
+    linear-gradient(180deg, #A64EE0 0%, rgba(166, 78, 224, 0) 100%), #E6E6E6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    position: flex;
+    width: 100vw;
+    min-width: 100vw;
+    height: 568px;
+}
+
+
+.header #headerImg {
+    display: block;
+    position: center;
+    width: 100% !important;
+    height: 413px;
+    background-image: url(/imgs/hustlerBackground.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header #logo {
+
+    position: absolute;
+    width: 165px;
+    height: 192px;
+    top: -30px;
+    left:-6px;
+    right:0;
+    margin:0 auto;
+    margin-top: 120px;
+
+
+    background: url(/imgs/hustlerLogo.svg);
+    background-repeat: no-repeat;
+
+}
+
+#stackName {
+    position: absolute;
+    width: 275.79px;
+    height: 80px;
+    right: 532.21px;
+    top: 300px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 30px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42.1053px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 8.42105px 8.42105px rgba(0, 0, 0, 0.25);
+}
+
+#intro {
+    position: absolute;
+    width: 1020px;
+    height: 315px;
+    top: 404px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+
+.member {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 968px;
+    top: 168px;
+    align-self: center;
+    background: none; 
+    margin-top: 10px;
+}
+
+.member .picture {
+    display: block;
+    position: relative;
+    width: 309px;
+    height: 309px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 20px;
+
+    border-radius: 64.5px !important;
+}
+
+
+.member #name {
+    position: absolute;
+    width: 100vw;
+    height: 18px;
+    top: 360px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.member #quote {
+    position: absolute;
+    width: 1030px;
+    height: 152px;
+    top: 485px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-style: none;
+    position: relative; 
+    top: 560px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: capitalize;
+
+    color: #000000;
+    z-index:9999999;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: #000000 !important;
+    position: relative; 
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+}
+
+video {
+    display: block;
+    position: relative;
+    width: 309px;
+    height: 309px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 64.5px !important;
+}
+
+
+
+
+/* MENU */
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 40px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav
+{
+    background: linear-gradient(180deg, #63dc3e 0%, rgba(99, 220, 62, 0.15) 100%), #ffffff;
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+    width: 240px;
+    height: 58%;
+    top: -60%;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateY(100%);
+}
+
+ul{
+    top: 60px;
+    position: absolute;
+    width: 240px;
+}
+
+#hyper{
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+}
+
+a{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    padding: 14.8px 5px;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
