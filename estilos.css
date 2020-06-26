@@ -13,7 +13,7 @@ background: linear-gradient(180deg, rgba(47, 46, 65, 0.2) 0%, rgba(47, 46, 65, 0
     position: absolute;
     width: 818px;
     height: 116px;
-    left: 255px;
+    left: 355px;
     top: 41px;
 
     font-family: 'Roboto', sans-serif; 
@@ -33,7 +33,7 @@ background: linear-gradient(180deg, rgba(47, 46, 65, 0.2) 0%, rgba(47, 46, 65, 0
     position: absolute;
     width: 728px;
     height: 425px;
-    left: 220px;
+    left: 310px;
     top: 199px;
     
     background: url(team.png);
@@ -76,11 +76,12 @@ nav
     position: absolute;
     transition: all .5s;
 }
+/*
 nav:hover{
     transform: translateY(100%);
-}
+}*/
 
-input[type="checkbox"]:hover ~ nav
+input[type="checkbox"]:checked ~ nav
 {
     transform: translateY(100%);
 }
@@ -102,7 +103,7 @@ a{
     align-items: center;
     text-align: center;
     display: block;
-    padding: 20px 5px;
+    padding: 14.8px 5px;
     color: white;
 }
 
