@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     background: 
     linear-gradient(180deg, rgba(47, 46, 65, 0.2) 0%, rgba(47, 46, 65, 0) 100%), 
@@ -21,7 +27,7 @@ body{
     position: center;
     width: 100% !important;
     height: 413px;
-    background-image: url(/imgs/hackerBackground.svg);
+    background-image: url(../../imgs/hackerBackground.svg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -36,7 +42,7 @@ body{
     margin:0 auto;
     margin-top: 20px;
 
-    background: url(/imgs/hackerLogo.svg);
+    background: url(../../imgs/hackerLogo.svg);
 
 }
 
@@ -207,27 +213,26 @@ video {
 
 /* MENU */
 
-
-
-a{
+.menu a{
     text-decoration: none;
     color: black;
 }
 
-ul{
+.menu ul{
     list-style: none;
 }
 
-img{
+.menu img{
     width: 40px;
+    position: fixed;
 }
 
-input[type="checkbox"]
+.menu input[type="checkbox"]
 {
     display: none;
 }
 
-nav
+.menu nav
 {
     background: linear-gradient(180deg, #63dc3e 0%, rgba(99, 220, 62, 0.15) 100%), #ffffff;
     mix-blend-mode: normal;
@@ -235,7 +240,7 @@ nav
     width: 240px;
     height: 58%;
     top: -60%;
-    position: absolute;
+    position: fixed;
     transition: all .5s;
 }
 
@@ -244,18 +249,18 @@ input[type="checkbox"]:checked ~ nav
     transform: translateY(100%);
 }
 
-ul{
+.menu ul{
     top: 60px;
     position: absolute;
     width: 240px;
 }
 
-#hyper{
+.menu #hyper{
     mix-blend-mode: normal;
     border-radius: 0px 0px 64.5px 0px;
 }
 
-a{
+.menu a{
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -265,11 +270,11 @@ a{
     color: white;
 }
 
-a:hover{
+.menu a:hover{
     color: black;
 }
 
-label{
+.menu label{
     padding: 15px;
     position: absolute;
     z-index: 1;
