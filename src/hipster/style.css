@@ -19,7 +19,7 @@ body{
     position: center;
     width: 100% !important;
     height: 413px;
-    background-image: url(/imgs/hipsterBackground.svg);
+    background-image: url(../../imgs/hipsterBackground.svg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -36,7 +36,7 @@ body{
     margin-top: 80px;
 
 
-    background: url(/imgs/hipsterLogo.svg);
+    background: url(../../imgs/hipsterLogo.svg);
     background-repeat: no-repeat;
 
 }
