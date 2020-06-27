@@ -42,7 +42,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 4500px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +177,7 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: -1;
 }
 
 .lateral_primary{
@@ -230,3 +231,72 @@ main{
     background-image: url(src/principalPage/hackers.svg);
 }
 
+/* MENU */
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu img{
+    width: 40px;
+    position: fixed;
+}
+
+.menu input[type="checkbox"]
+{
+    display: none;
+}
+
+.menu nav
+{
+    background: linear-gradient(180deg, #63dc3e 0%, rgba(99, 220, 62, 0.15) 100%), #ffffff;
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+    width: 240px;
+    height: 58%;
+    top: -60%;
+    position: fixed;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateY(100%);
+}
+
+.menu ul{
+    top: 60px;
+    position: absolute;
+    width: 240px;
+}
+
+.menu #hyper{
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 64.5px 0px;
+}
+
+.menu a{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    padding: 14.8px 5px;
+    color: white;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+.menu label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
